@@ -20,8 +20,8 @@
 |   4   | [migrations](./migrations)             | Folder      |
 |   5   | [src](./src)                           | Folder      |
 |   6   | [test](./test)                         | Folder      |
-|   7   | [bs-config.json](bs-config.json)       |             |
-|   8   | [deployfrontend.sh](deployfrontend.sh) |             |
-|   9   | [package-lock.json](package-lock.json) |             |
-|  10   | [truffle-config.js](truffle-config.js) |             |
-|  11   | [truffle.js](truffle.js)               |             |
+|   7   | [bs-config.json](bs-config.json)       | File        |
+|   8   | [deployfrontend.sh](deployfrontend.sh) | File        |
+|   9   | [package-lock.json](package-lock.json) | File        |
+|  10   | [truffle-config.js](truffle-config.js) | File        |
+|  11   | [truffle.js](truffle.js)               | File        |
