@@ -18,3 +18,5 @@
 |   2   | [contracts](./contracts)   | Folder      |
 |   3   | [docs](./docs)             | Folder      |
 |   4   | [migrations](./migrations) | Folder      |
+|   5   | [src](./src)               | Folder      |
+|   6   | [test](./test)             | Folder      |
