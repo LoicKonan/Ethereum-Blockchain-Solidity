@@ -99,14 +99,17 @@ App = {
     })
 
     // Load token sale contract
-    App.contracts.DappTokenSale.deployed().then(function(instance) {
+    App.contracts.DappTokenSale.deployed().then(function(instance) 
+    {
       dappTokenSaleInstance = instance;
       return dappTokenSaleInstance.tokenPrice();
-    }).then(function(tokenPrice) {
+    }).then(function(tokenPrice) 
+    {
       App.tokenPrice = tokenPrice;
       $('.token-price').html(web3.fromWei(App.tokenPrice, "ether").toNumber());
       return dappTokenSaleInstance.tokensSold();
-    }).then(function(tokensSold) {
+    }).then(function(tokensSold) 
+    {
       App.tokensSold = tokensSold.toNumber();
       $('.tokens-sold').html(App.tokensSold);
       $('.tokens-available').html(App.tokensAvailable);
@@ -115,10 +118,12 @@ App = {
       $('#progress').css('width', progressPercent + '%');
 
       // Load token contract
-      App.contracts.DappToken.deployed().then(function(instance) {
+      App.contracts.DappToken.deployed().then(function(instance) 
+      {
         dappTokenInstance = instance;
         return dappTokenInstance.balanceOf(App.account);
-      }).then(function(balance) {
+      }).then(function(balance) 
+      {
         $('.dapp-balance').html(balance.toNumber());
         App.loading = false;
         loader.hide();
@@ -127,17 +132,21 @@ App = {
     });
   },
 
-  buyTokens: function() {
+  buyTokens: function() 
+  {
     $('#content').hide();
     $('#loader').show();
     var numberOfTokens = $('#numberOfTokens').val();
-    App.contracts.DappTokenSale.deployed().then(function(instance) {
-      return instance.buyTokens(numberOfTokens, {
+    App.contracts.DappTokenSale.deployed().then(function(instance) 
+    {
+      return instance.buyTokens(numberOfTokens, 
+        {
         from: App.account,
         value: numberOfTokens * App.tokenPrice,
         gas: 500000 // Gas limit
       });
-    }).then(function(result) {
+    }).then(function(result) 
+    {
       console.log("Tokens bought...")
       $('form').trigger('reset') // reset number of tokens in form
       // Wait for Sell event
@@ -145,8 +154,10 @@ App = {
   }
 }
 
-$(function() {
-  $(window).load(function() {
+$(function() 
+{
+  $(window).load(function() 
+  {
     App.init();
   })
 });
