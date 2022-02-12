@@ -14,7 +14,7 @@
 
 |   #   | File                      |
 | :---: | ------------------------- |
-|   1   | **ERC20Token.json**           |
+|   1   | **ERC20Token.json(./artifacts...ERC20Token_metadata.json)**           |
 |   2   | **ERC20Token_metadata.json.** |
 |   3   | **Owned.json**                |
 |   4   | **Owned_metadata.json**    |
