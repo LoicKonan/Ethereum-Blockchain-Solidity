@@ -12,12 +12,12 @@
 
 ### Files
 
-|   #   | File                      |
-| :---: | ------------------------- |
-|   1   | **ERC20Token.json(./artifacts...ERC20Token_metadata.json)**           |
+|   #   | File                          |
+| :---: | ----------------------------- |
+|   1   | **ERC20Token.json**           |
 |   2   | **ERC20Token_metadata.json.** |
 |   3   | **Owned.json**                |
-|   4   | **Owned_metadata.json**    |
+|   4   | **Owned_metadata.json**       |
 |   5   | **Token_metadata.json**       |
 |   6   | **1_Storage.sol**             |
 |   7   | **2_Owner.sol**               |
