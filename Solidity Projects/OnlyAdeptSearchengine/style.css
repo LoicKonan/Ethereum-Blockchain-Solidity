@@ -1,0 +1,300 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0; 
+}
+
+/*This is for the nav bar*/
+li, a{
+  font-family: "Montserrat", san-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  margin: 10px 30px 0px 0px;
+}
+.nav-background{
+   display:flex;
+   justify-content: center;
+   position:fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   background-color: #800000;
+   padding: 10px 0px 20px;
+   z-index: 500;
+}
+
+@media (max-width: 28.75em) {
+  .nav-background{
+    justify-content: center;
+    list-style: none;
+}
+  }
+
+.nav_links{
+   display: flex;
+   list-style: none;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 25px;
+  color:  #800000;
+  
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+  color:  #FFFFFF;
+}
+
+.nav_links li a:hover{
+  color:   #FFD700;
+  
+}
+/*end of nav style*/
+
+/* This is for picture*/
+
+.picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 80px 0px 0px 0px;
+  padding: 145px 20px 20px 20px;
+	justify-content:center; 
+	align-items:center; 
+}
+.textfont{
+   padding: 0px 0px 100px 0px;
+}
+.textfont p{
+font-family: 'Oswaimgld', sans-serif;
+font-size: 70px;
+color:black;
+}
+
+
+
+
+/* */
+
+.welcomeheader{
+  background-color: #800000;
+  padding: 0px 0px 350px 0px;
+}
+
+ .welcomeheader h1{
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 45px;
+  margin: 100px 50px 50px 150px;
+  padding: 55px 10px 0px 10px;
+  text-align: left;
+  color: whitesmoke;
+}
+
+
+ .welcomeheader p{
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 35px;
+  margin: 0px 0px 0px 200px;
+  padding: 0px 0px 0px 0px;
+  text-align: left;
+  color: whitesmoke;
+}
+
+.welcomeheader li{
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 50px 5px 5px 5px;
+  color: whitesmoke;
+}
+
+
+
+
+
+
+/* The WHite box of the claim token*/
+
+.white-box{
+  background-color:white;
+  padding: 50px 0px 180px 0px;
+}
+
+#Claim
+{
+  margin: 25px auto;
+  width: 50vw;
+  background-color: #e3d5eb;
+  padding: 25px 0px 25px 0px;
+}
+
+
+
+/* This is for Nft section*/
+
+.inst-box{
+  background-color:white;
+  padding: 10px 0px 100px 0px;
+}
+#Contact {
+  margin: 25px auto;
+  width: 50vw;
+  padding: 100px 0px 25px 0px;
+}
+
+
+#instructions 
+{
+  margin: 25px auto;
+  width: 50vw;
+  background-color: #e3d5eb;
+  padding: 25px 0px 25px 0px;
+}
+
+
+.card {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 20px;
+  margin: 15px;
+  text-align: center;
+}
+
+
+#mint-text {
+    text-align: center;
+    color: #FFFFFF
+}
+
+
+
+#mint-button {
+  padding: 10px;
+  width: 75%;
+  height: 45%;
+  font-size: 45px;
+  font-weight: bold;
+  background-color: #800000;
+  border: none;
+  box-shadow: 15px 15px #f4f806;
+  transition: 75ms;
+}
+#mint-button:active {
+  background-color: #800000;
+  box-shadow: 0 0 #800000;
+  transform: translate(15px, 15px);
+}
+#mint-button{
+  color: #FFFFFF
+}
+
+
+@media (max-width: 1700px) {
+  .nav-list {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1550px) {
+  .nav-list {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+  }
+  #mint {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (max-width: 941px) {
+  #header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .nav-list {
+    font-size: 18px;
+  }
+  #header-img {
+    justify-self: center;
+    width: 350px;
+  }
+
+  #about-article {
+    width: 40vw;
+  }
+
+  #mint-button {
+    box-shadow: 7px 7px #fcfcf605;
+    font-size: 30px;
+  }
+  #mint-button:active {
+    transform: translate(7px, 7px);
+  }
+  
+  section {
+    position: relative;
+ }
+@media (max-width: 560px) {
+  #video {
+    width: 373px;
+    height: 210px;
+  }
+  }
+
+
+
+
+.project-section h1{
+  text-align: right;
+  background: white;
+  margin: 200px 0px 0px 0px;
+  padding: 100px 10px 10px;
+}
+
+.contact-section{
+  background-color: #245a19;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+   margin: 200px 0px 0px 0px;
+  padding: 100px 10px 10px;
+}
+
+.contact-details {
+  font-size: 40px;
+  text-shadow: 2px 2px 1px black;
+  transition: transform 0.3s ease-out;
+  padding: 0px 50px 0px;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+
